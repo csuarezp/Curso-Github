@@ -1,0 +1,56 @@
+git init   inicia el repositorio
+
+git add index.html agrega en cache pero todabia no hace commit
+git add .  agrega todos los documentos
+
+git status revisa los cambios
+
+git rm --cache index.html borra el docuemnto en cache 
+
+git commit -m "Este es el primer commit"  
+
+git log index.html informacion importante
+
+git show index.html muestra en detalle los cambios del archivoi
+
+git diff 35h34j5h3jh5h3 43jh5j3h45jb3  compara los archivos con el id
+
+git reset 43j5h34jh5345hkj43h5j --hard  vuelve al estado de ese commmit y borra el historial
+
+git reset 43j5h34jh5345hkj43h5j --soft vuelve a la anterior con el historial
+
+git commit -am "cambio xyz" realiza el commit de una pero no en archivos nuevos
+
+git branch cabecera  crea una nueva rama par atrabajar 
+
+git checkout master ir a otra rama
+
+git merge cabecera Toca estar en la rama principal (master) y el parametro es la rama con la que se quiere fusionar o alrevez XD
+
+
+
+
+
+git log --oneline - Te muestra el id commit y el título del commit.
+git log --decorate- Te muestra donde se encuentra el head point en el log.
+git log --stat - Explica el número de líneas que se cambiaron brevemente.
+git log -p- Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
+git shortlog - Indica que commits ha realizado un usuario, mostrando el usuario y el titulo de sus commits.
+git log --graph --oneline --decorate y
+git log --pretty=format:"%cn hizo un commit %h el dia %cd" - Muestra mensajes personalizados de los commits.
+git log -3 - Limitamos el número de commits.
+git log --after=“2018-1-2” ,
+git log --after=“today” y
+git log --after=“2018-1-2” --before=“today” - Commits para localizar por fechas.
+git log --author=“Name Author” - Commits realizados por autor que cumplan exactamente con el nombre.
+git log --grep=“INVIE” - Busca los commits que cumplan tal cual está escrito entre las comillas.
+git log --grep=“INVIE” –i- Busca los commits que cumplan sin importar mayúsculas o minúsculas.
+git log – index.html- Busca los commits en un archivo en específico.
+git log -S “Por contenido”- Buscar los commits con el contenido dentro del archivo.
+git log > log.txt - guardar los logs en un archivo txt
+
+git clone url_del_servidor_remoto: Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git.
+git push: Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
+git fetch: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
+git merge: También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+git pull: Básicamente, git fetch y git merge al mismo tiempo.
